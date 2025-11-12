@@ -1,13 +1,18 @@
-import logo from './logo.svg';
+import { createContext, useContext } from 'react';
 import './App.css';
 import Header from './Components/Header/Header';
-import AddTask from './Components/Tasks/AddTask';
+import Main from './Components/Main/Main';
+import { TasksProvider } from './Contexts/TasksContext';
+
 
 function App() {
+
   return (
     <div className="App">
       <Header />
-      <AddTask />
+      <TasksProvider>
+        <Main />
+      </TasksProvider>
     </div>
   );
 }
