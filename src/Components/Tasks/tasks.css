@@ -1,0 +1,37 @@
+.one-task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: rgba(81, 77, 77, 0.221) solid 1px;
+}
+
+.task-list {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.task-field {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.add-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-form {
+    display: flex;
+    padding: 8px;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
