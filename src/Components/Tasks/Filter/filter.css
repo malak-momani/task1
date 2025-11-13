@@ -7,11 +7,17 @@
 }
 
 .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 20%;
     height: 40px;
-    border-color:2px solid rgba(200, 124, 10, 0.952);
     border-radius: 7px;
     background-color: rgba(160, 196, 229, 0.508);
-    margin-top: auto;
-    margin-bottom: auto;
+    border: 1px solid rgb(143, 71, 71);
+}
+
+.item:hover {
+    background-color: rgb(183, 150, 150);
+    cursor: pointer;
 }

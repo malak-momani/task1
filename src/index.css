@@ -1,3 +1,13 @@
+:root {
+  --purple-heart: #6b3dc4;
+  --sea-buckthorn: #f79336;
+  --salt-box: #6f5575;
+  --oasis: #feefcd;
+  --fuchsia-blue: #7d55cc;
+  --golden-glow: #fde09b;
+  --pale-slate: #c5b8c0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

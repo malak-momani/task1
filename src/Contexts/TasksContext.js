@@ -1,10 +1,11 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 import useLocalStorage from "../useLocalStorage/useLocalStorage";
 
 const TasksContext = createContext();
 
 const TasksProvider = ({ children }) => {
     const [tasks, setTasks] = useLocalStorage('todoTasks', []);
+    const [filter, setFilter] = useState('all')
 
     const addTask = (taskText, id) => {
         const newTask = { id, text: taskText, completed: false };
@@ -23,8 +24,18 @@ const TasksProvider = ({ children }) => {
         setTasks(prevTasks => prevTasks.filter(task => task.id !== taskId));
     };
 
+    const changeFilter = (filterType) => {
+        setFilter(filterType)
+    }
+
     const contextValue = {
-        tasks, setTasks, addTask, toggleTask, deleteTask
+        tasks,
+        filter,
+        setTasks,
+        addTask,
+        toggleTask,
+        deleteTask,
+        changeFilter
     }
 
     return (

@@ -35,3 +35,27 @@
     margin-right: auto;
     width: 75%;
 }
+
+.task-controls {
+   display: flex;
+   flex-direction: row;
+   justify-content: right;
+   justify-items: center;
+}
+.edit {
+    width: 100%;
+}
+
+.delete {
+    width: 100%;
+}
+
+.flex-item {
+    /* background-color: var(--salt-box); */
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 5%;
+    cursor: pointer;
+}
