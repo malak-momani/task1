@@ -7,15 +7,22 @@ import Delete from '../../assests/bin.png';
 const Task = ({ task }) => {
 
     const [isCompleted, setIsCompleted] = useState(task?.completed);
-    const { toggleTask, deleteTask } = useContext(TasksContext)
+    const [editMode, setEditMode] = useState(false);
+    const [editedTask, seteditedTask] = useState(task?.text);
+    const { toggleTask, deleteTask, editTask } = useContext(TasksContext)
 
     const handleCheckboxChange = (event) => {
         setIsCompleted(event.target.checked);
         toggleTask(task?.id)
     };
 
-    const handleEdit = () => {
+    const handleChange = (event) => {
+        seteditedTask(event.target.value)
+    };
 
+
+    const handleEdit = () => {
+        editTask(task?.id, editedTask)
     }
 
     const handleDelete = () => {
@@ -24,7 +31,23 @@ const Task = ({ task }) => {
 
     return (
         <div className="one-task">
-            <p>{task?.text}</p>
+            {editMode ?
+                <div>
+                    <input placeholder="New Task"
+                        type="text"
+                        value={editedTask}
+                        onChange={handleChange}
+                        className="edit-field"
+                    />
+                    <button onClick={() => {
+                        handleEdit();
+                        setEditMode(false)
+                    }}
+                        className="add-button amaranth-regular">Done</button>
+                </div>
+                :
+                <div className='flex-item'>{task?.text}</div>
+            }
             <div className='task-controls'>
                 <div className='flex-item'>
                     <input
@@ -33,7 +56,7 @@ const Task = ({ task }) => {
                         onChange={handleCheckboxChange}
                     />
                 </div>
-                <button className='flex-item' onClick={handleEdit}>
+                <button className='flex-item' onClick={() => setEditMode(true)}>
                     <img src={Edit} alt='edit' className='edit' />
                 </button>
                 <button className='flex-item' onClick={handleDelete}>

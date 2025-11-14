@@ -24,6 +24,11 @@ const TasksProvider = ({ children }) => {
         setTasks(prevTasks => prevTasks.filter(task => task.id !== taskId));
     };
 
+    const editTask = (id, newTask) => {
+        setTasks(prevTasks =>
+            prevTasks?.map(task => task.id === id ? { ...task, text: newTask } : task));
+    };
+
     const changeFilter = (filterType) => {
         setFilter(filterType)
     }
@@ -35,7 +40,8 @@ const TasksProvider = ({ children }) => {
         addTask,
         toggleTask,
         deleteTask,
-        changeFilter
+        changeFilter,
+        editTask
     }
 
     return (
