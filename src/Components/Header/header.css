@@ -8,7 +8,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgb(250, 250, 177);
-    color: rgb(128, 110, 134);
+    background-color: var(--salt-box);
+    color: var(--golden-glow);
 }
-

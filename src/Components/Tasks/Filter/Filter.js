@@ -7,19 +7,19 @@ const Filter = () => {
 
     return (
         <div className='container'>
-            <button className='item'
+            <button className='item amaranth-regular'
                 value='all'
                 onClick={() => changeFilter('all')}>
                 All
             </button>
             <button
-                className='item'
+                className='item amaranth-regular'
                 value='completed'
                 onClick={() => changeFilter('completed')}>
                 completed
             </button>
             <button
-                className='item'
+                className='item amaranth-regular'
                 value='pending'
                 onClick={() => changeFilter('pending')}>
                 Pending

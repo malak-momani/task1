@@ -24,7 +24,7 @@ const AddTask = () => {
                 onChange={handleChange}
                 className="task-field"
             />
-            <button onClick={handleSubmit} className="add-button">ADD</button>
+            <button onClick={handleSubmit} className="add-button amaranth-regular">ADD</button>
         </div>
     );
 

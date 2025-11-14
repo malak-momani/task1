@@ -8,7 +8,7 @@ import { TasksProvider } from './Contexts/TasksContext';
 function App() {
 
   return (
-    <div className="App">
+    <div className="App amaranth-regular">
       <Header />
       <TasksProvider>
         <Main />
