@@ -10,4 +10,5 @@
     align-items: center;
     background-color: var(--salt-box);
     color: var(--golden-glow);
+    border-bottom: 4px solid var(--golden-glow);
 }

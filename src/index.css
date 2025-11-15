@@ -6,10 +6,27 @@
   --fuchsia-blue: #7d55cc;
   --golden-glow: #fde09b;
   --pale-slate: #c5b8c0;
+  --background: #c5b8c0;
+
+}
+
+:root.dark {
+  --purple-heart: #b79aff;
+  --sea-buckthorn: #ffb86c;
+  --salt-box: #312733;
+  --oasis: #3b2f28;
+  --fuchsia-blue: #c3a6ff;
+  --golden-glow: #ffdf85;
+  --pale-slate: #88828a;
+
+  --background: #1a1623;
+  --surface: #242033;
+  --text: #f2ecff;
+  --text-secondary: #c7bfd8;
 }
 
 body {
-  background-color: var(--pale-slate);
+  background: var(--background);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

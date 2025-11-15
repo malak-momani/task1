@@ -32,7 +32,7 @@ const Task = ({ task }) => {
     return (
         <div className="one-task">
             {editMode ?
-                <div>
+                <div className='flex-item task-text'>
                     <input placeholder="New Task"
                         type="text"
                         value={editedTask}
@@ -46,7 +46,7 @@ const Task = ({ task }) => {
                         className="add-button amaranth-regular">Done</button>
                 </div>
                 :
-                <div className='flex-item'>{task?.text}</div>
+                <div className='flex-item task-text'>{task?.text}</div>
             }
             <div className='task-controls'>
                 <div className='flex-item'>

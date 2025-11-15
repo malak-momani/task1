@@ -7,14 +7,18 @@
 
 .task-list {
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 5%;
+    border-left: 4px solid var(--salt-box);
+
 }
 
 .tasks-filter {
     padding-top: 4%;
     display: flex;
     flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
 
 .task-field {
@@ -88,6 +92,9 @@ input[type="checkbox"]:checked::before {
     flex-direction: row;
     justify-content: right;
     justify-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 180px;
 }
 
 .edit {
@@ -99,12 +106,17 @@ input[type="checkbox"]:checked::before {
 }
 
 .flex-item {
-    background-color: var(--pale-slate);
+    background-color: var(--background);
     border: 0px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-basis: 8%;
+    /* justify-content: center; */
     cursor: pointer;
     padding: 2vh;
+    flex: 1;
+    color: var(--text);
+}
+
+.task-text {
+    justify-self: flex-start;
 }

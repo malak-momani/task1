@@ -1,0 +1,52 @@
+/* Toggle Container */
+.theme-toggle {
+    position: relative;
+    width: 55px;
+    height: 28px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Hide the checkbox */
+.theme-toggle input {
+    display: none;
+}
+
+/* Slider look */
+.theme-toggle .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: var(--salt-box);
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+/* Circle */
+.theme-toggle .slider::before {
+    content: "";
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: var(--oasis);
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+/* Checked (Dark mode ON) */
+.theme-toggle input:checked+.slider {
+    background-color: var(--purple-heart);
+}
+
+.theme-toggle input:checked+.slider::before {
+    transform: translateX(27px);
+}
+
+.text {
+    color: var(--text);
+}
