@@ -1,6 +1,6 @@
 # task1
 “To-Do + Filter” App with Local Storage
 
-![dark](../../GitHub/task1/src/assests/dark.png)
+![dark](https://github.com/malak-momani/task1/blob/main/src/assests/dark.png)
 
-![dark](../../GitHub/task1/src/assests/light.png)
+![light](https://github.com/malak-momani/task1/blob/main/src/assests/light.png)
