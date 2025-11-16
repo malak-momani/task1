@@ -80,4 +80,31 @@ code {
     height: 15% !important;
     width: 15% !important;
   }
+
+  .task-field {
+    width: 60% !important;
+    height: 3vh !important;
+  }
+
+  .add-button {
+    height: 5vh !important;
+  }
+
+  .theme-toggle {
+    position: relative;
+    width: 50px !important;
+    height: 25px !important;
+  }
+
+  .theme-toggle .slider::before {
+    height: 20px !important;
+    width: 20px !important;
+    left: 2px !important;
+    bottom: 2px !important;
+  }
+
+  .text {
+    font-size: 70%;
+    padding-right: 5px;
+  }
 }
