@@ -11,4 +11,7 @@
     background-color: var(--salt-box);
     color: var(--golden-glow);
     border-bottom: 4px solid var(--golden-glow);
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
